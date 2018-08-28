@@ -1,0 +1,109 @@
+[
+    {
+        "id": 6,
+        "name": "Akita",
+        "weight": "100lbs"
+    },
+    {
+        "id": 8,
+        "name": "Alaskan Husky",
+        "weight": "50lbs"
+    },
+    {
+        "id": 10,
+        "name": "American Bulldog",
+        "weight": "100lbs"
+    },
+    {
+        "id": 15,
+        "name": "American Pit Bull Terrier",
+        "weight": "60lbs"
+    },
+    {
+        "id": 23,
+        "name": "Australian Shepherd",
+        "weight": "50lbs"
+    },
+    {
+        "id": 24,
+        "name": "Australian Terrier",
+        "weight": "14lbs"
+    },
+    {
+        "id": 31,
+        "name": "Beagle",
+        "weight": "20lbs"
+    },
+    {
+        "id": 42,
+        "name": "Bichon Frise",
+        "weight":"11lbs"
+
+    },
+    {
+        "id": 50,
+        "name": "Border Collie",
+        "weight":"30lbs"
+    },
+    {
+        "id": 51,
+        "name": "Border Terrier",
+        "weight": "15lbs"
+
+    },
+    {
+        "id": 53,
+        "name": "Boston Terrier",
+        "weight":"25lbs"
+
+    },
+    {
+        "id": 61,
+        "name": "Bull Terrier",
+        "weight": "60lbs"
+    },
+    {
+        "id": 71,
+        "name": "Cavalier King Charles Spaniel",
+        "weight": "18lbs"
+    },
+    {
+        "id": 86,
+        "name": "Cocker Spaniel",
+        "weight": "25lbs"
+    },
+    {
+        "id": 92,
+        "name": "Dalmatian",
+        "weight": "50lbs"
+    },
+    {
+        "id": 94,
+        "name": "Doberman Pinscher",
+        "weight":"80lbs"
+
+    },
+    {
+        "id": 103,
+        "name": "English Springer Spaniel",
+        "weight": "50lbs"
+
+    },
+    {
+        "id": 113,
+        "name": "French Bulldog",
+        "weight": "25lbs"
+
+    },
+    {
+        "id": 114,
+        "name": "German Pinscher",
+        "weight":"40lbs"
+
+    },
+    {
+        "id": 115,
+        "name": "German Shepherd Dog",
+        "weight": "70lbs"
+    }
+]
