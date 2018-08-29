@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header>
-      <h2>Welcome to Get-A-Pet</h2>
+      <h2>Welcome to Get-A-Pet!</h2>
       <nav>
         <router-link to="/">Home</router-link>
         <router-link to="/dogs">Dogs</router-link>
