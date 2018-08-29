@@ -1,19 +1,13 @@
-
 {
-  "extends": [
-    "eslint:recommended",
-    "plugin:vue/essential"
-  ],
+  "extends": "eslint:recommended",
   "parserOptions": {
-    "parser": "babel-eslint",
     "ecmaVersion": 8,
     "ecmaFeatures": {
       "impliedStrict": true
-    },
-    "sourceType": "module"
+    }
   },
   "env": {
-    "browser": true,
+    "node": true,
     "es6": true
   },
   "rules": {
@@ -57,3 +51,4 @@
     "array-bracket-spacing": "error"
   }
 }
+

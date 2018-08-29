@@ -14,28 +14,28 @@ const dataPath = 'data/dogs.json';
 
 function readData() {
 
-    const raw = fs.readFileSync(dataPath);
+  const raw = fs.readFileSync(dataPath);
 
-    const data = JSON.parse(raw);
+  const data = JSON.parse(raw);
 
-    return data;
+  return data;
 }
 
-    app.get('/api/dogs', (req, res) => {
-        const data = readData();
-        res.send(data);
-    });
+app.get('/api/dogs', (req, res) => {
+  const data = readData();
+  res.send(data);
+});
 
-    app.post('/api/dogs', (req, res) => {
-        const data = readData();
-        data.push(req.body);
-        fs.writeFileSync(dataPath, JSON.stringify(data));
+app.post('/api/dogs', (req, res) => {
+  const data = readData();
+  data.push(req.body);
+  fs.writeFileSync(dataPath, JSON.stringify(data));
 
-        res.send(req.body);
-    });
+  res.send(req.body);
+});
     
-    const PORT = 3000;
+const PORT = 3000;
 
-    app.listen(PORT, () => console.log('app running...'));
+app.listen(PORT, () => console.log('app running...'));
 
 
