@@ -1,7 +1,6 @@
 <template>
   <section>
-    <h2>Welcome to Portland Neighborhoods!</h2>
-    <router-link to="/dogs">view neighborhoods</router-link>
+    <router-link to="/dogs">view dogs</router-link>
   </section>
 </template>
 

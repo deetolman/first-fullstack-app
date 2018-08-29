@@ -19,11 +19,15 @@
 export default {
   props: ['dog'],
   computed: {
+    weight() {
+      return this.dog.weight.toLocaleString();
+    },
     type() {
       return this.dog.type.toLocaleString();
-    },
+    }
   }
 };
+
 </script>
 
 <style scoped>

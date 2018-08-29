@@ -1,16 +1,25 @@
 <template>
   <div id="app">
-    <img src="./assets/beagle.jpg">
+    <header>
+      <h2>Welcome to Get-A-Pet</h2>
+      <nav>
+        <router-link to="/">Home</router-link>
+        <router-link to="/dogs">Dogs</router-link>
+        <br>
+      </nav>
+    </header>
+
+    <main>
+      <img src="./assets/beagle.jpg">
+      <router-view></router-view>
+    </main>
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'app',
-  components: {
-    
-  }
+  
 };
 </script>
 
@@ -21,6 +30,23 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 40px;
+}
+header {
+  font-size: 20px;
+  height: 75px;
+  letter-spacing: 2px;
+  justify-content: space-between;
+}
+nav {
+    word-spacing: 5px;
+}
+img {
+  width:100%;
+  padding: 50px;
+  margin: 10px;;
+}
+body {
+  background-color:azure;
 }
 </style>
