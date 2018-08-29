@@ -1,12 +1,12 @@
 <template>
 <section>
   <h2>Pet Dogs</h2>
-  <p v-if="!Dogs">Loading dogs...</p>
+  <p v-if="!dogs">Loading dogs...</p>
   <ul v-else class="list">
     <Dog
       v-for="(dog, index) in dogs"
       :key="index"
-      :neighborhood="dog"
+      :dog="dog"
     />
   </ul>
   <AddDog :on-add="handleAdd"/>
