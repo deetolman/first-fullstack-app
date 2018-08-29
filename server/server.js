@@ -19,7 +19,23 @@ function readData() {
     const data = JSON.parse(raw);
 
     return data;
+}
 
-//     app.get('/api/dogs', (req, res)) => {
-// }
+    app.get('/api/dogs', (req, res) => {
+        const data = readData();
+        res.send(data);
+    });
+
+    app.post('/api/dogs', (req, res) => {
+        const data = readData();
+        data.push(req.body);
+        fs.writeFileSync(dataPath, JSON.stringify(data));
+
+        res.send(req.body);
+    });
+    
+    const PORT = 3000;
+
+    app.listen(PORT, () => console.log('app running...'));
+
 
