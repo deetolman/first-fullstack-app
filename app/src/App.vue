@@ -3,8 +3,8 @@
     <header>
       <h2>Welcome to Get-A-Pet!</h2>
       <nav>
-        <router-link to="/">Home</router-link>
-        <router-link to="/dogs">Dogs</router-link>
+        <router-link class="nav" to="/">Home</router-link>
+        <router-link class="nav" to="/dogs">s</router-link>
         <br>
       </nav>
     </header>
@@ -19,6 +19,7 @@
 <script>
 
 export default {
+  name:'app'
   
 };
 </script>

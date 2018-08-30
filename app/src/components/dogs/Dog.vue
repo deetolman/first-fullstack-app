@@ -3,14 +3,8 @@
     <h3>{{ dog.name }}</h3>
     <p>Adopt {{ dog.name }} today!</p>
     <p>Age: {{ dog.age }}</p>
-    <p class="breed">
-        Breed: 
-      <strong>{{ type }}</strong> 
-    </p>
-    <p>
-        Weight
-      <strong>{{ weight }}</strong>
-    </p>
+    <p>Breed:{{ type }</p>
+    <p>Weight{{ weight }}</p>
   </article>
 </template>
 
@@ -19,11 +13,11 @@
 export default {
   props: ['dog'],
   computed: {
-    weight() {
-      return this.dog.weight.toLocaleString();
-    },
     type() {
       return this.dog.type.toLocaleString();
+    },
+    weight() {
+      return this.dog.weight.toLocaleString();
     }
   }
 };

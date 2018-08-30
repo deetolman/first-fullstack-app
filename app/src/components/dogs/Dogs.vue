@@ -1,8 +1,7 @@
 <template>
 <section>
   <h2>Pet Dogs</h2>
-  <p v-if="!dogs">Loading dogs...</p>
-  <ul v-else class="list">
+  <ul class="list">
     <Dog
       v-for="(dog, index) in dogs"
       :key="index"
@@ -14,7 +13,7 @@
 </template>
 
 <script>
-import Dog from './Dog';
+import Dog from './Dog.vue';
 import AddDog from './AddDog.vue';
 import api from '../../services/api';
 export default {

@@ -1,6 +1,6 @@
 <template>
   <section>
-    <router-link to="/dogs">view dogs</router-link>
+    <router-link to="/dogs">Browse Dogs</router-link>
   </section>
 </template>
 
