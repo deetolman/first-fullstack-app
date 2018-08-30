@@ -68,7 +68,8 @@ app.post('/api/adoptable-pets', (req, res) => {
     .catch(err => console.log(err));
 });
 
+const PORT = 3000;
 
-app.listen(3000, () => console.log('app running...'));
+app.listen(PORT, () => console.log('app running...'));
 
 

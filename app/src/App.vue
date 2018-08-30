@@ -4,7 +4,7 @@
       <h2>Welcome to Get-A-Pet!</h2>
       <nav>
         <router-link class="nav" to="/">Home</router-link>
-        <router-link class="nav" to="/dogs">s</router-link>
+        <router-link class="nav" to="/dogs">Dogs</router-link>
         <br>
       </nav>
     </header>
