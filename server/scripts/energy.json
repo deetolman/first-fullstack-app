@@ -1,0 +1,4 @@
+[
+  { "name": "calm", "direction": "low" },
+  { "name": "active", "direction": "high" }
+]

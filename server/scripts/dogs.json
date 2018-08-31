@@ -4,71 +4,80 @@
         "name": "Marley",
         "type": "Akita",
         "weight": "100lbs",
-        "age":2
+        "age":2,
+        "energy": "low"
     },
     {
         "id": 8,
         "name": "Ruffus",
         "type": "Alaskan Husky",
         "weight": "50lbs",
-        "age": 9
+        "age": 9,
+        "energy": "high"
     },
     {
         "id": 10,
         "name": "Johnny",
         "type": "American Bulldog",
         "weight": "100lbs",
-        "age": 1
+        "age": 1,
+        "energy": "low"
     },
     {
         "id": 15,
         "name": "Sky",
         "type": "American Pit Bull Terrier",
         "weight": "60lbs",
-        "age": 4
+        "age": 4,
+        "energy": "high"
     },
     {
         "id": 23,
         "name": "Lulu",
         "type": "Australian Shepherd",
         "weight": "50lbs",
-        "age": 6
+        "age": 6,
+        "energy": "high"
     },
     {
         "id": 24,
         "name": "Rumi",
         "type": "Australian Terrier",
         "weight": "14lbs",
-        "age": 3
+        "age": 3,
+        "energy": "low"
     },
     {
         "id": 31,
         "name": "Harbor",
         "type": "Beagle",
         "weight": "20lbs",
-        "age": 8
+        "age": 8,
+        "energy": "high"
     },
     {
         "id": 42,
         "name": "Candy",
         "type": "Bichon Frise",
         "weight":"11lbs",
-        "age": 2
-
+        "age": 2,
+        "energy": "low"
     },
     {
         "id": 50,
         "name": "Fifi",
         "type": "Border Collie",
         "weight":"30lbs",
-        "age": 1
+        "age": 1,
+        "energy": "high"
     },
     {
         "id": 51,
         "name": "Lovely",
         "type": "Border Terrier",
         "weight": "15lbs",
-        "age": 6
+        "age": 6,
+        "energy": "low"
 
     },
     {
@@ -76,7 +85,8 @@
         "name": "Tommy",
         "type": "Boston Terrier",
         "weight":"25lbs",
-        "age": 5
+        "age": 5,
+        "energy": "high"
 
     },
     {
@@ -84,64 +94,71 @@
         "name": "Romeo",
         "type": "Bull Terrier",
         "weight": "60lbs",
-        "age": 2
+        "age": 2,
+        "energy": "low"
     },
     {
         "id": 71,
         "name": "Lady",
         "type": "Cavalier King Charles Spaniel",
         "weight": "18lbs",
-        "age": 1
+        "age": 1,
+        "energy": "low"
     },
     {
         "id": 86,
         "name": "Messi",
         "type": "Cocker Spaniel",
         "weight": "25lbs",
-        "age": 2
+        "age": 2,
+        "energy": "low"
     },
     {
         "id": 92,
         "name": "Donny",
         "type": "Dalmatian",
         "weight": "50lbs",
-        "age": 4
+        "age": 4,
+        "energy": "high"
     },
     {
         "id": 94,
         "name": "Rita",
         "type": "Doberman Pinscher",
         "weight":"80lbs",
-        "age": 6
-
+        "age": 6,
+        "energy": "low"
     },
     {
         "id": 103,
         "name": "Momo",
         "type": "English Springer Spaniel",
         "weight": "50lbs",
-        "age": 2
-
+        "age": 2,
+        "energy": "low"
     },
     {
         "id": 113,
         "name": "Gracie",
         "type": "French Bulldog",
         "weight": "25lbs",
-        "age": 10
+        "age": 10,
+        "energy": "low"
     },
     {
         "id": 114,
         "name": "Yolo",
         "type": "German Pinscher",
         "weight":"40lbs",
-        "age": 3
+        "age": 3,
+        "energy": "high"
     },
     {
         "id": 115,
         "name": "Milo",
         "type": "German Shepherd Dog",
         "weight": "70lbs",
-        "age": 4
+        "age": 4,
+        "energy": "low"
     }
 ]

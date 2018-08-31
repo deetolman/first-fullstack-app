@@ -5,7 +5,7 @@ export default {
     })
       .then(response => response.json());
   },
-  getDog(id) {
+  getDogDetail(id) {
     return fetch(`http://localhost:3000/api/dogs/${id}`, {
       headers: { 'Content-Type': 'application/json' }
     })

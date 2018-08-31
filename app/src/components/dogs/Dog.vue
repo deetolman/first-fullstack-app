@@ -2,7 +2,7 @@
   <article>
     <router-link :to="`/dogs/${dog.id}`">
     <h3>{{ dog.name }}</h3>
-    <p>Adopt <strong> {{ dog.name }} </strong> today!</p>
+    <p>Adopt {{ dog.name }} today!</p>
     <p>Age: {{ dog.age }}</p>
     <p>Breed:{{ dog.type }}</p>
     <p>Weight:{{ dog.weight }}</p>

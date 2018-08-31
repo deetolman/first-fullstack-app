@@ -32,7 +32,7 @@ export default {
   },
   components: { 
     Dog,
-    AddDog 
+    AddDog,
   },
   methods: {
     handleAdd(dog) {
