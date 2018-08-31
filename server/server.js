@@ -37,8 +37,8 @@ app.get('/api/adoptable-pets/:id', (req, res) => {
       name, 
       type,
       weight,
-      age,
-    FROM pets
+      age
+    FROM adoptable_pets;
     WHERE id = $1;
   `,
   [req.params.id]

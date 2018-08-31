@@ -1,25 +1,41 @@
 <template id="dog-template">
   <article>
+    <router-link :to="`/dogs/${dog.id}`">
     <h3>{{ dog.name }}</h3>
     <p>Adopt {{ dog.name }} today!</p>
     <p>Age: {{ dog.age }}</p>
-    <p>Breed:{{ type }</p>
+    <p>Breed:{{ type }}</p>
     <p>Weight{{ weight }}</p>
+    </router-link>
   </article>
 </template>
 
 <script>
+// import api from '../../services/api';
 
 export default {
-  props: ['dog'],
-  computed: {
-    type() {
-      return this.dog.type.toLocaleString();
-    },
-    weight() {
-      return this.dog.weight.toLocaleString();
-    }
+  props: {
+    dog: Object
   }
+  // data() {
+  //   return {
+  //     dog: null,
+  //   };
+  // },
+  // created() {
+  //   api.getDog(this.$route.params.id)
+  //     .then(dog => {
+  //       this.dog = dog;
+  //     });
+  // },
+  // computed: {
+  //   type() {
+  //     return this.dog.type.toLocaleString();
+  //   },
+  //   weight() {
+  //     return this.dog.weight.toLocaleString();
+  //   }
+  // }
 };
 
 </script>

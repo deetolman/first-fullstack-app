@@ -57,7 +57,7 @@ export default {
   },
   methods: {
     handleSubmit() {
-      this.onAdd(this.Dog)
+      this.onAdd(this.dog)
         // this fires when save is complete and data added to nieghborhoods array
         .then(() => {
           this.Dog = initDog();

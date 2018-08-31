@@ -1,11 +1,12 @@
 <template>
 <section>
   <h2>Pet Dogs</h2>
-  <ul class="list">
+  <p v-if="!dogs">Loading...</p>
+  <ul class="list" v-else>
     <Dog
       v-for="(dog, index) in dogs"
-      :key="index"
-      :dog="dog"
+      :key= "index" 
+      :dog= "dog"
     />
   </ul>
   <AddDog :on-add="handleAdd"/>
@@ -16,6 +17,7 @@
 import Dog from './Dog.vue';
 import AddDog from './AddDog.vue';
 import api from '../../services/api';
+
 export default {
   data() {
     return { 
@@ -34,6 +36,7 @@ export default {
   },
   methods: {
     handleAdd(dog) {
+      console.log(dog);
       return api.addDog(dog)
         .then(saved => {
           this.dogs.push(saved);
