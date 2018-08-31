@@ -36,7 +36,6 @@ export default {
   },
   methods: {
     handleAdd(dog) {
-      console.log(dog);
       return api.addDog(dog)
         .then(saved => {
           this.dogs.push(saved);

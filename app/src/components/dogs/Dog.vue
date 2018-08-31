@@ -2,16 +2,16 @@
   <article>
     <router-link :to="`/dogs/${dog.id}`">
     <h3>{{ dog.name }}</h3>
-    <p>Adopt {{ dog.name }} today!</p>
+    <p>Adopt <strong> {{ dog.name }} </strong> today!</p>
     <p>Age: {{ dog.age }}</p>
-    <p>Breed:{{ type }}</p>
-    <p>Weight{{ weight }}</p>
+    <p>Breed:{{ dog.type }}</p>
+    <p>Weight:{{ dog.weight }}</p>
     </router-link>
   </article>
 </template>
 
 <script>
-// import api from '../../services/api';
+//import api from '../../services/api';
 
 export default {
   props: {

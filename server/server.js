@@ -14,7 +14,7 @@ const databaseUrl = 'postgres://localhost:5432/pets';
 const client = new Client(databaseUrl);
 client.connect();
 
-app.get('/api/adoptable-pets', (req, res) => {
+app.get('/api/dogs', (req, res) => {
   client.query(`
     SELECT
       id,
@@ -22,7 +22,7 @@ app.get('/api/adoptable-pets', (req, res) => {
       type, 
       weight,
       age
-    FROM adoptable_pets;
+    FROM dogs;
   `)
     .then(result => {
       res.send(result.rows);
@@ -30,7 +30,7 @@ app.get('/api/adoptable-pets', (req, res) => {
     .catch(err => console.log(err));
 });
 
-app.get('/api/adoptable-pets/:id', (req, res) => {
+app.get('/api/dogs/:id', (req, res) => {
   client.query(`
     SELECT 
       id,
@@ -38,7 +38,7 @@ app.get('/api/adoptable-pets/:id', (req, res) => {
       type,
       weight,
       age
-    FROM adoptable_pets;
+    FROM dogs;
     WHERE id = $1;
   `,
   [req.params.id]
@@ -50,12 +50,12 @@ app.get('/api/adoptable-pets/:id', (req, res) => {
 
 });
 
-app.post('/api/adoptable-pets', (req, res) => {
+app.post('/api/dogs', (req, res) => {
   console.log('posting');
   const body = req.body;
 
   client.query(`
-    INSERT INTO adoptable_pets (name, type, weight, age)
+    INSERT INTO dogs (name, type, weight, age)
     VALUES ($1, $2, $3, $4)
     RETURNING *;
   `,

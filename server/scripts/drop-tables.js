@@ -13,7 +13,7 @@ const client = new Client(databaseUrl);
 client.connect()
   .then(() => {
     return client.query(`
-      DROP TABLE IF EXISTS adoptable_pets;
+      DROP TABLE IF EXISTS dogs;
     `);
   })
   .then(
