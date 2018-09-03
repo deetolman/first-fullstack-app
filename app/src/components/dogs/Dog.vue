@@ -1,4 +1,4 @@
-<template id="dog-template">
+<template>
   <article>
     <router-link :to="`/dogs/${dog.id}`">
     <h3>{{ dog.name }}</h3>
@@ -11,33 +11,11 @@
 </template>
 
 <script>
-//import api from '../../services/api';
-
 export default {
   props: {
     dog: Object
   }
-  // data() {
-  //   return {
-  //     dog: null,
-  //   };
-  // },
-  // created() {
-  //   api.getDog(this.$route.params.id)
-  //     .then(dog => {
-  //       this.dog = dog;
-  //     });
-  // },
-  // computed: {
-  //   type() {
-  //     return this.dog.type.toLocaleString();
-  //   },
-  //   weight() {
-  //     return this.dog.weight.toLocaleString();
-  //   }
-  // }
 };
-
 </script>
 
 <style scoped>
