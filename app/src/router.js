@@ -1,5 +1,5 @@
 import VueRouter from 'vue-router';
-import Home from './components/home/Home.vue';
+import Home from './components/home/home.vue';
 import Dogs from './components/dogs/Dogs.vue';
 import AddDog from './components/dogs/AddDog.vue';
 import DogDetail from './components/dogs/DogDetail.vue';

@@ -8,24 +8,21 @@
 </template>
 
 <script>
-// import api from '../../services/api';
+import api from '../../services/api';
 // import Dogs from './Dogs';
 
 export default {
-  props: {
-    dog: Object
-  }
-  // data() {
-  //   return {
-  //     dog: null,
-  //   };
-  // },
-  // created() {
-  //   api.getDogDetail(this.$route.params.id)
-  //     .then(dog => {
-  //       this.dog = dog;
-  //     });
-  // },
+  data() {
+    return {
+      dog: null,
+    };
+  },
+  created() {
+    api.getDogDetail(this.$route.params.id)
+      .then(dog => {
+        this.dog = dog;
+      });
+  },
   // components:{
   //   Dogs
 };

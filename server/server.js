@@ -38,7 +38,7 @@ app.get('/api/dogs/:id', (req, res) => {
       type,
       weight,
       age
-    FROM dogs;
+    FROM dogs
     WHERE id = $1;
   `,
   [req.params.id]
@@ -64,8 +64,7 @@ app.post('/api/dogs', (req, res) => {
     .then(result => {
       // we always get rows back, in this case we just want first one.
       res.send(result.rows[0]);
-    })
-    .catch(err => console.log(err));
+    });
 });
 
 const PORT = 3000;
