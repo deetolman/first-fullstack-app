@@ -3,15 +3,14 @@
     <header>
       <h2>Welcome to Get-A-Pet!</h2>
       <nav>
-        <router-link class="nav" to="/">Home</router-link>
-        <router-link class="nav" to="/dogs">Dogs</router-link>
-        <br>
+        <router-link to="/">Home</router-link>
+        <router-link to="/dogs">Dogs</router-link>
       </nav>
     </header>
 
     <main>
       <img src="./assets/beagle.jpg">
-      <router-view></router-view>
+      <router-view :energy="energy"></router-view>
     </main>
   </div>
 </template>

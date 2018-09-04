@@ -1,70 +1,33 @@
 <template id="dog-template">
   <section class="add-dog">
     <h1>Add a Dog</h1>
-    <form @submit.prevent="handleSubmit">
-      <label>
-        Name:
-        <input type="text" name="name" placeholder="Name" required
-          v-model="dog.name">
-      </label>
-
-      <label>
-        Type:
-        <input type="text" name="type" placeholder="Type" required
-          v-model="dog.type">
-      </label>
-
-      <label>
-        Weight:
-        <input type="text" name="weight" placeholder="Weight" required
-          v-model="dog.weight">
-      </label>
-
-      <label>
-        Age:
-        <input type="text" name="age" placeholder="Age" required
-          v-model="dog.age">
-      </label>
-      
-      <label>
-        <button type="submit">Add</button>
-      </label>
-    </form>
+    <Dogform 
+      label="Add"
+        :energy="energy"
+        :onEdit="handleAdd"/>
   </section>
-</template>
+  </template>
 
 <script>
+import DogForm from './DogForm.vue';
+import api from '../../services/api';
 
-const initDog = () => {
-  return {
-    name: '',
-    type: '',
-    weight: '',
-    age: ''
-  };
-};
 export default {
-  props: {
-    onAdd: {
-      type: Function,
-      required: true
-    }
+  components: {
+    DogForm
   },
-  data() {
-    return {
-      dog: initDog()
-    };
+  props: {
+    energy: Array
   },
   methods: {
-    handleSubmit() {
-      this.onAdd(this.dog)
-        // this fires when save is complete and data added to dogs array
-        .then(() => {
-          this.Dog = initDog();
+    handleAdd(dog) {
+      return api.addDog(dog)
+        .then(added => {
+          this.$router.push(`/dogs/${added.id}`);
         });
     }
   }
-};
+};    
 </script>
 
 <style>
